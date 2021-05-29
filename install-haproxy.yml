@@ -1,7 +1,6 @@
 ---
 
-- name: Install HAProxy
-  hosts: "{{ host }}"
+- hosts: "{{ host }}"
   become: true
   roles:
     - haproxy
