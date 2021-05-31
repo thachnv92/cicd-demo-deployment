@@ -1,6 +1,6 @@
 ---
 - name: Ensure HAProxy is installed.
-  package: name=haproxy state=present
+  apt: name=haproxy state=present
 
 - name: Get HAProxy version.
   command: haproxy -v
